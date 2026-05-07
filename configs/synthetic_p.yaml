@@ -1,0 +1,4 @@
+dataset_dir: data/synthetic/p_demo
+element: P
+frames: 80
+seed: 8

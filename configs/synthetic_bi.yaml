@@ -1,0 +1,4 @@
+dataset_dir: data/synthetic/bi_demo
+element: Bi
+frames: 80
+seed: 7
