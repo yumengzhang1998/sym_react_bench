@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "topology-kinetics"
+version = "0.1.0"
+description = "Topology-state kinetics for fluxional Bi/P cluster fusion pathways"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Topology Kinetics Team"}]
+license = {text = "MIT"}
+dependencies = [
+  "numpy",
+  "scipy",
+  "pandas",
+  "networkx",
+  "ase",
+  "matplotlib",
+  "pyyaml",
+  "scikit-learn"
+]
+
+[project.optional-dependencies]
+viz = ["plotly", "nglview"]
+md = ["MDAnalysis"]
+dev = ["pytest"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
